@@ -16,6 +16,7 @@ const userRouter = require('./routes/userRoutes');
 const reviewRouter = require('./routes/reviewRoutes');
 const bookingRouter = require('./routes/bookingRoutes');
 const globallErrorHandler = require('./controllers/errorController');
+const compression = require('compression');
 
 // Init
 const app = express();
@@ -81,6 +82,8 @@ app.use(
 // // static files
 // app.use(express.static(`${__dirname}/public`));
 // app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(compression());
 
 // test middleware
 app.use((req, res, next) => {

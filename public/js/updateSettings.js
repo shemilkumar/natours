@@ -3,7 +3,7 @@ import { showAlert } from './alert';
 
 export const updateSettings = async (data, type) => {
   try {
-    const url = `http://127.0.0.1:3000/api/v1/users/${
+    const url = `/api/v1/users/${
       type === 'password' ? 'updateMyPassword' : 'updateMe'
     }`;
 
@@ -13,7 +13,7 @@ export const updateSettings = async (data, type) => {
       data,
     });
 
-    console.log(res);
+    // console.log(res);
     if (res.data.stats === 'success') {
       showAlert('success', `${type.toUpperCase()} updated successfully`);
       window.location.reload(true);
@@ -21,6 +21,6 @@ export const updateSettings = async (data, type) => {
     //
   } catch (error) {
     console.log(error);
-    // showAlert('error', error.data.response.message);
+    showAlert('error', error.data.response.message);
   }
 };
