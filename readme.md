@@ -4,9 +4,9 @@ Build using modern technologies: node.js, express, mongoDB, mongoose.
 
 ![HomeImage](https://github.com/shemilkumar/natours/blob/master/dev-data/screenshots/home.png)
 
-![TourImage1](/blob/master/dev-data/screenshots/tour1.png)
+![TourImage1](https://github.com/shemilkumar/natours/blob/master/dev-data/screenshots/tour1.png)
 
-![TourImage2](/blob/master/dev-data/screenshots/tour2.png)
+![TourImage2](https://github.com/shemilkumar/natours/blob/master/dev-data/screenshots/tour2.png)
 
 
 ## Technologies
